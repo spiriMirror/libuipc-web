@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="libuipc: library of unified incremental potential contact">
+  <meta name="keywords" content="libuipc, IPC, simulation, physics">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>libuipc: library of unified incremental potential contact</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">libuipc: library of unified incremental potential contact</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://kemenghuang.github.io/">Kemeng Huang</a><sup>1,2,3,#*</sup>, </span>
+            <span class="author-block">
+              <a href="https://github.com/MuGdxy">Xinyu Lu</a><sup>1,2,*</sup>, </span>
+            <span class="author-block">
+              <a href="https://roushelfy.github.io/">Zhaofeng Luo</a><sup>3,4</sup>, 
+            </span>
+            <span class="author-block">
+              <a href="https://github.com/Ren-bowen">Bowen Ren</a><sup>1,3,5</sup>, 
+            </span>
+            <span class="author-block">
+              <a href="https://github.com/LamWS">Huancheng Lin</a><sup>1,2</sup>, 
+            </span>
+            <span class="author-block">
+              <a href="https://www.floydmchitalu.com/">Floyd M. Chitalu</a><sup>1,2</sup>, 
+            </span>
+
+            <span class="author-block">
+              <a href="#">...</a><sup>(to be appended)</sup>, 
+            </span>
+
+            <span class="author-block">
+              <a href="https://www.cs.cmu.edu/~minchenl/">Minchen Li</a><sup>3</sup>, 
+            </span>
+            <span class="author-block">
+              <a href="https://www.cs.hku.hk/index.php/people/academic-staff/taku">Taku Komura</a><sup>1,2</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+                            <span class="author-block"><sup># </sup>project lead, </span>
+                            <span class="author-block"><sup>* </sup>core contributor</span>
+                        </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/spiriMirror/libuipc"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <!-- Dataset Link. -->
+              <span class="link-block">
+                <a href="https://spirimirror.github.io/libuipc-doc/"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fa fa-book"></i>
+                  </span>
+                  <span>Document</span>
+                  </a>
+              </span>
+
+
+              <div class="is-size-5 publication-authors">
+                <span class="author-block"><sup>1</sup>The University of Hong Kong,    </span>
+                <span class="author-block"><sup>2</sup>TransGP,    </span>
+                <span class="author-block"><sup>3</sup>Carnegie Mellon University,  </span>
+                <span class="author-block"><sup>4</sup>Peking University,    </span>
+                <span class="author-block"><sup>5</sup>Tsinghua University</span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="./image/teaser.png" alt="Libuipc Teaser" style="width: 100%;">
+      <h2 class="subtitle has-text-centered">
+        A Cross-Platform Modern C++20 <strong>Lib</strong>rary of <strong>U</strong>nified <strong>I</strong>ncremental <strong>P</strong>otential <strong>C</strong>ontact
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item">
+          <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=113497581032756&bvid=BV1FMU6Y6Eu2&cid=26807108424&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" height="300" width="100%"></iframe>
+        </div>
+        <div class="item">
+          <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=113499007095849&bvid=BV1sBU7YDENs&cid=26812943497&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" height="300" width="100%"></iframe>
+        </div>
+        <div class="item">
+          <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=113499007227424&bvid=BV1NBU7YQEGL&cid=26813006592&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" height="300" width="100%"></iframe>
+        </div>
+        <div class="item">
+          <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=113542812537310&bvid=BV1iQzcYvEsx&cid=27003194487&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" height="300" width="100%"></iframe>
+        </div>
+        <div class="item">
+          <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=113787759761628&bvid=BV1pTr9YAEBB&cid=27751613444&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" height="300" width="100%"></iframe>
+        </div>
+        <div class="item">
+          <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=113800057459136&bvid=BV195c5eXELV&cid=27800175018&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" height="300" width="100%"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Introduction</h2>
+        <div class="content has-text-justified">
+          <p>
+            <strong>Libuipc</strong> is a library that offers a unified <strong>GPU</strong> incremental potential contact framework for simulating the dynamics of rigid bodies, soft bodies, cloth, and threads, and their couplings. It ensures accurate, <strong>penetration-free frictional contact</strong> and is naturally <strong>differentiable</strong>. Libuipc aims to provide robust and efficient <strong>forward</strong> and <strong>backward</strong> simulations, making it easy for users to integrate with machine learning frameworks, inverse dynamics, robotics, and more.
+          </p>
+          <p>
+            We are <strong>actively</strong> developing Libuipc and will continue to add more features and improve its performance. We welcome any feedback and contributions from the community!
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+    <!-- Why Libuipc. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Why Libuipc</h2>
+
+        <div class="content has-text-justified">
+          <ul>
+            <li><strong>Easy & Powerful</strong>: Libuipc offers an intuitive and unified approach to creating and accessing vivid simulation scenes, supporting a variety of objects and constraints that can be easily added.</li>
+            <li><strong>Fast & Robust</strong>: Libuipc is designed to run fully in parallel on the GPU, achieving high performance and enabling large-scale simulations. It features a robust and accurate frictional contact model that effectively handles complex frictional scenarios without penetration.</li>
+            <li><strong>High Flexibility</strong>: Libuipc provides APIs in both Python and C++ and supports both Linux and Windows systems.</li>
+            <li><strong>Fully Differentiable</strong>: Libuipc provides differentiable simulation APIs for backward optimizations. (Coming Soon)</li>
+          </ul>
+        </div>
+
+        <div class="columns is-centered">
+          <div class="column">
+            <img src="./image/concepts_code.svg" alt="Libuipc Concepts Code">
+          </div>
+          <div class="column">
+            <img src="./image/concepts.drawio.svg" alt="Libuipc Concepts Diagram">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/ Why Libuipc. -->
+
+    <!-- Key Features. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Key Features</h2>
+
+        <div class="content has-text-justified">
+          <ul>
+            <li>Finite Element-Based Deformable Simulation</li>
+            <li>Rigid & Soft Body Strong Coupling Simulation</li>
+            <li>Penetration-Free & Accurate Frictional Contact Handling</li>
+            <li>User Scriptable Animation Control</li>
+            <li>Fully Differentiable Simulation (Diff-Sim Coming Soon)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--/ Key Features. -->
+
+    <!-- News. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">News</h2>
+        <div class="content has-text-justified">
+          <ul>
+            <li>[2025-05-23] <a href="https://dl.acm.org/doi/10.1145/3735126">StiffGIPC</a> is presented at Siggraph 2025, and Libuipc v1.0.0 will be released soon!</li>
+            <li>[2024-11-25] Libuipc v0.9.0 (Alpha) is published! We are excited to share our work with the community. This is a preview version, if you have any feedback or suggestions, please feel free to contact us! <a href="https://github.com/spiriMirror/libuipc/issues">Issues</a> and <a href="https://github.com/spiriMirror/libuipc/pulls">PRs</a> are welcome!</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--/ News. -->
+  </div>
+</section>
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{stiffgipc2025,
+      author = {Huang, Kemeng and Lu, Xinyu and Lin, Huancheng and Komura, Taku and Li, Minchen},
+      title = {StiffGIPC: Advancing GPU IPC for Stiff Affine-Deformable Simulation},
+      year = {2025},
+      publisher = {Association for Computing Machinery},
+      volume = {44},
+      number = {3},
+      issn = {0730-0301},
+      doi = {10.1145/3735126},
+      journal = {ACM Trans. Graph.},
+      month = may,
+      articleno = {31},
+      numpages = {20}
+}
+
+@article{gipc2024,
+      author = {Huang, Kemeng and Chitalu, Floyd M. and Lin, Huancheng and Komura, Taku},
+      title = {GIPC: Fast and Stable Gauss-Newton Optimization of IPC Barrier Energy},
+      year = {2024},
+      publisher = {Association for Computing Machinery},
+      volume = {43},
+      number = {2},
+      issn = {0730-0301},
+      doi = {10.1145/3643028},
+      journal = {ACM Trans. Graph.},
+      month = {mar},
+      articleno = {23},
+      numpages = {18}
+}</code></pre>
+  </div>
+</section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column">
+                    <div class="content has-text-centered">
+                        <p>
+                            We thank <a href="https://github.com/star-hengxing">Zhiheng Huang</a> and <a href="https://github.com/sailing-innocent">Zihang Zhu</a> for their contributions and assistance, and we appreciate the feedback from other community members.
+                        </p>
+                        <p>
+                            Website template borrowed from <a
+                                href="https://github.com/nerfies/nerfies.github.io">NeRFies</a> and <a
+                                href="https://eureka-research.github.io/">Eureka</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
